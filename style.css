@@ -59,6 +59,7 @@ p {
     transition: all 0.5s;
     margin-left: 1rem;
     background-color: var(--teal-700);
+    cursor: pointer;
 }
 
 .card-header {
