@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-placeholder-icon"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-placeholder-icon"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-placeholder-icon"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let boxes = document.querySelectorAll(".card");
+
+        boxes.forEach((box, index) => {
+            box.addEventListener('click', function(e) {
+            e.target.style.width = '0';
+            e.target.style.height = '0';
+            e.target.style.margin = '0';
+            e.target.style.scale = '0.1';
+            e.target.style.opacity = '0';
+
+            e.target.addEventListener('transitionend', function() {
+                e.target.remove();
+            }, { once: true });
+            });
+        });
+    </script>
+</html>

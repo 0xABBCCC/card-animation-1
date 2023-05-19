@@ -1,0 +1,65 @@
+:root {
+    --default-transition: 250ms;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.card {
+    height: 500px;
+    width: 250px;
+    background: skyblue;
+    transition: all 0.5s;
+    margin-left: 1rem;
+}
+
+.card-header {
+    background-color: yellowgreen;
+
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.card-placeholder-icon {
+    height: 15px;
+    width: 50px;
+    background-color: aquamarine;
+    border-radius: 1rem;
+}
