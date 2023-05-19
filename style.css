@@ -1,6 +1,17 @@
 :root {
-    --default-transition: 250ms;
-}
+    --teal-50: #f0fdfa;
+    --teal-100: #ccfbf1;
+    --teal-200: #99f6e4;
+    --teal-300: #5eead4;
+    --teal-400: #2dd4bf;
+    --teal-500: #14b8a6;
+    --teal-600: #0d9488;
+    --teal-700: #0f766e;
+    --teal-800: #115e59;
+    --teal-900: #134e4a;
+    --teal-950: #042f2e;
+  }
+  
 
 
 *, *::before, *::after {
@@ -12,6 +23,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: var(--teal-950);
 }
 
 div {
@@ -46,6 +58,7 @@ p {
     background: skyblue;
     transition: all 0.5s;
     margin-left: 1rem;
+    background-color: var(--teal-700);
 }
 
 .card-header {
@@ -55,6 +68,7 @@ p {
     align-items: center;
 
     padding: 1rem;
+    background-color: var(--teal-600);
 }
 
 .card-placeholder-icon {
@@ -62,4 +76,5 @@ p {
     width: 50px;
     background-color: aquamarine;
     border-radius: 1rem;
+    background-color: var(--teal-500);
 }
